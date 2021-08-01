@@ -1,14 +1,44 @@
 package com.javabattle;
 
 public class Student {
-  private String name;
-  private int age;
+  String name;
+  int age;
 
-  public Student(String name, int age) {
-    this.name = name;
+  Student() {
+    this(25);
+    System.out.println("print default constructor");
+  }
+
+  public Student(int age) {
     this.age = age;
   }
-  Student(){
-    System.out.println();
+
+  public Student(String name1, int age1) {
+    name = name1;
+    age = age1;
+  }
+
+  public void setName(String name) {
+    this.name = name;
+  }
+
+  public void setAge(int age) {
+    this.age = age;
+  }
+
+  public String getName() {
+    return name;
+  }
+
+  public int getAge() {
+    return age;
+  }
+
+  @Override
+  public String toString() {
+    return "Student{" +
+        "name='" + name + '\'' +
+        ", age=" + age +
+        '}';
   }
 }
