@@ -13,6 +13,9 @@ public class Main {
     Student student2 = new Student("Shiv", 4);
     System.out.println(student2);
 
+    Student student3 = new Student(student2);
+    System.out.println(student3);
+
     //setting value for name
     System.out.println(student1.getName());
     student1.setName("Saurabh");
